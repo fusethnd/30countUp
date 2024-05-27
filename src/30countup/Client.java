@@ -3,11 +3,6 @@ import java.awt.*;
 import java.awt.event.*;
 import java.io.*;
 import java.net.*;
-// import java.io.BufferedReader;
-// import java.io.IOException;
-// import java.io.InputStreamReader;
-// import java.io.PrintWriter;
-// import java.net.Socket;
 
 public class Client {
     private JFrame frame;
@@ -50,9 +45,6 @@ public class Client {
             final int number = i + 1;
             numberButtons[i] = new RoundButton(String.valueOf(number), Color.decode("#e8f100"), Color.decode("#107be3"));
             numberButtons[i].addActionListener(e -> sendNumber(number));
-            // numberButtons[i].setBackground(Color.decode("#e8f100"));
-            // numberButtons[i].setForeground(Color.decode("#107be3"));
-            // buttonPanel.add(new RoundButton(String.valueOf(number), Color.decode("#e8f100"), Color.decode("#107be3")));
             buttonPanel.add(numberButtons[i], gbc);
         }
 
